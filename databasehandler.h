@@ -10,14 +10,16 @@ class DatabaseHandler : public QObject
 public:
     explicit DatabaseHandler(QObject *parent = nullptr);
     ~DatabaseHandler();
+
  public slots:
     void networkReplyReadyRead();
-
+    void createuser();
 signals:
 
 private:
        QNetworkAccessManager * m_networkManager;
         QNetworkReply * m_networkReply;
 };
+
 
 #endif // DATABASEHANDLER_H

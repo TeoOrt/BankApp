@@ -1,9 +1,14 @@
-#include <QCoreApplication>
+#include "mainwindow.h"
 #include "databasehandler.h"
+#include <QApplication>
+
 int main(int argc, char *argv[])
-{    
-    QCoreApplication a(argc, argv);
-    DatabaseHandler DataDB;
-    qDebug() << "Helllo";
+{
+    QApplication a(argc, argv);
+   DatabaseHandler dataDB;
+    MainWindow w;
+    w.show();
     return a.exec();
+
+
 }
