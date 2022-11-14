@@ -50,7 +50,7 @@ void baseclient::setSocial_security(int newSocial_security)
     social_security = newSocial_security;
 }
 
-void baseclient::createcheckingaccount(int cash=0)
+void baseclient::createcheckingaccount(int cash)
 {
 
 }

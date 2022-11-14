@@ -16,11 +16,10 @@ public:
     ~MainWindow();
 
 private slots:
+
+
+
     void on_pushButton_clicked();
-
-    void on_textEdit_customContextMenuRequested(const QPoint &pos);
-
-    void on_pushButton_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;
